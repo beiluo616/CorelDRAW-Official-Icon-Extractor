@@ -1,1 +1,0 @@
-Image assets will be referenced from this directory.
