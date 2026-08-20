@@ -10,11 +10,13 @@
 
 ### CorelDRAW 2026 官方图标 / GUID / VBA / C++ CPG
 
-![CorelDRAW 2026 图标墙与 GUID 开发信息](docs/screenshots/interface-preview.jpg)
+<img width="1920" height="1029" alt="image" src="https://github.com/user-attachments/assets/9970abd8-6172-496f-af8f-eb816ffb849c" />
+
 
 ### 中文智能搜索
 
-![中文搜索二维码](docs/screenshots/search-cn-preview.jpg)
+<img width="1920" height="1028" alt="image" src="https://github.com/user-attachments/assets/3e1fdf41-6d9e-4687-9b0b-b47a1acc26e3" />
+
 
 ## 主要功能
 
