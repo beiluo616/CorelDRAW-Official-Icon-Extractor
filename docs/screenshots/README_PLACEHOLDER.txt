@@ -1,0 +1,1 @@
+Screenshots are added separately as binary assets.
