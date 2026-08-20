@@ -6,6 +6,16 @@
 > 作者：**北落果**  
 > 开源协议：**MIT License**
 
+## 界面预览
+
+### CorelDRAW 2026 官方图标 / GUID / VBA / C++ CPG
+
+![CorelDRAW 2026 图标墙与 GUID 开发信息](docs/screenshots/interface-preview.jpg)
+
+### 中文智能搜索
+
+![中文搜索二维码](docs/screenshots/search-cn-preview.jpg)
+
 ## 主要功能
 
 - 自动检测本机 CorelDRAW 安装，当前重点兼容 X8 ～ 2026/2027 常见目录结构。
