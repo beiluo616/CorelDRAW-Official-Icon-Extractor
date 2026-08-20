@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui>
+  <itemData caption="Missing guid but still useful" />
+  <itemData guid="{44444444-4444-4444-4444-444444444444}" />
+  <other value="ignored" />
+</ui>

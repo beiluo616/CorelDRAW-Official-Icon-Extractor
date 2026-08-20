@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <PublishTrimmed>false</PublishTrimmed>
+    <DebugType>embedded</DebugType>
+    <AssemblyName>CorelDRAW官方图标提取器</AssemblyName>
+    <Product>CorelDRAW官方图标提取器</Product>
+    <Authors>By北落果</Authors>
+    <Company>北落果</Company>
+    <Version>1.21</Version>
+    <FileVersion>1.21.0.0</FileVersion>
+    <AssemblyVersion>1.21.0.0</AssemblyVersion>
+    <ApplicationIcon>Assets\f10ai.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CDRIconExtractor.Core\CDRIconExtractor.Core.csproj" />
+    <ProjectReference Include="..\CDRIconExtractor.Windows\CDRIconExtractor.Windows.csproj" />
+    <Resource Include="Assets\f10ai.ico" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui>
+  <command guid="33333333-3333-3333-3333-333333333333" userCaption="Export" keySequence="Ctrl+E" icon="7" />
+</ui>

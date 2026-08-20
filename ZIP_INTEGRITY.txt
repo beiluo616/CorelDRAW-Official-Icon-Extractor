@@ -1,0 +1,21 @@
+CorelDRAW官方图标提取器 V1.21 Fix21
+
+源码完整性摘要：
+文件数（不含本文件）：119
+src/CDRIconExtractor.Core/Parsing/IconMapXmlParser.cs  SHA-256 26c6d617102adec443ca6b45fa5054304f65cb7fa6648e081c191ee82ed9b07a
+src/CDRIconExtractor.Core/Parsing/ModernIconMapBinder.cs  SHA-256 636fa4aa486839d3bb4146aa5a3177ef41d362bc2d5021266ee185cf9c65f83a
+src/CDRIconExtractor.Core/Models/IconAsset.cs  SHA-256 b51b83a28cec4e5c480a4a684ab5395c65d07a6a56042ff6315349f777833874
+src/CDRIconExtractor.Core/Association/IconAssociationEngine.cs  SHA-256 a7c275fd11419af8ecea1878211fcaea2ad6c8c9161dcdb7d93379daf0306745
+src/CDRIconExtractor.App/Services/ScanCoordinator.cs  SHA-256 481c127cc76b873c0af1b82b9817518aae4d6e938e8ace655f67f0413e5c4923
+src/CDRIconExtractor.App/ViewModels/IconItemViewModel.cs  SHA-256 90d1425f207c82aabdbd692513a1f108476b02125ee878490a78cc7eca15b079
+src/CDRIconExtractor.App/ViewModels/MainViewModel.cs  SHA-256 af6abe7cc5b1c9f74a4c13eeec2c0c196909528d8f273112b88ed9d689bc5500
+src/CDRIconExtractor.Core/Utilities/IconRegistrationTemplateGenerator.cs  SHA-256 9be89d8cb1ccd5bc2c5380f984feb5cdd8fbeafc207d0c9fee62773db7839c3f
+tests/CDRIconExtractor.Core.Tests/Parsing/IconMapXmlParserTests.cs  SHA-256 0a620193682953b8a5e757d9f0d5551135cc882fa40fe727b6bdaa97cf74c6b6
+tests/CDRIconExtractor.Core.Tests/Parsing/ModernIconMapBinderTests.cs  SHA-256 08f5c04afd51dbc07ffee01db77abdcb97a25b455c87509094b4ca285267fbea
+tests/CDRIconExtractor.Core.Tests/Association/IconAssociationEngineTests.cs  SHA-256 f323ce572d2cc0327a8b256af3fadd233c52ff4113481efc607bbba1f8babd52
+scripts/fix21-icons-map-audit.py  SHA-256 2336415c3f653a55356754b13b7f0743639bff6611532b5a7eb097406234eea5
+scripts/publish-win-x64.ps1  SHA-256 b13b49f172b2e50a67b37f001dbb7fd6974a0388f04f59d684d153da4dc62cae
+
+说明：本源码包不包含用户上传的 CorelDRAW 官方 DLL/EXE/Modern.crlicons/完整 icons.map.xml 或预置官方图标。fixtures/IconMap 仅为 5 条人工合成测试数据。
+V1.21 使用 icons.map.xml -> Modern.crlicons 官方 GUID/路径关系；X8 旧版 CrlIcons.dll 链路保持。
+Windows 发布固定命令：powershell -ExecutionPolicy Bypass -File .\scripts\publish-win-x64.ps1

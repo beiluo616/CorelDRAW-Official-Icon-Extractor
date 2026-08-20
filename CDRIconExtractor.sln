@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRIconExtractor.Core", "src\CDRIconExtractor.Core\CDRIconExtractor.Core.csproj", "{7FBCDD9A-4A7D-4A6C-A663-00E9C4EC8B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRIconExtractor.Windows", "src\CDRIconExtractor.Windows\CDRIconExtractor.Windows.csproj", "{B193FBB4-1C62-4C3B-A11B-57D84430331E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRIconExtractor.App", "src\CDRIconExtractor.App\CDRIconExtractor.App.csproj", "{8B723830-E882-4D0C-9DE1-C07D7EB1B9DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRIconExtractor.Core.Tests", "tests\CDRIconExtractor.Core.Tests\CDRIconExtractor.Core.Tests.csproj", "{9DA1B41C-E5C3-4B96-B756-13AFA6C4AB06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDRIconExtractor.Windows.Tests", "tests\CDRIconExtractor.Windows.Tests\CDRIconExtractor.Windows.Tests.csproj", "{DC0051C1-8B0B-43F2-BCE3-C6777F902197}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {7FBCDD9A-4A7D-4A6C-A663-00E9C4EC8B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {7FBCDD9A-4A7D-4A6C-A663-00E9C4EC8B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {7FBCDD9A-4A7D-4A6C-A663-00E9C4EC8B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {7FBCDD9A-4A7D-4A6C-A663-00E9C4EC8B09}.Release|Any CPU.Build.0 = Release|Any CPU
+        {B193FBB4-1C62-4C3B-A11B-57D84430331E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {B193FBB4-1C62-4C3B-A11B-57D84430331E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {B193FBB4-1C62-4C3B-A11B-57D84430331E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {B193FBB4-1C62-4C3B-A11B-57D84430331E}.Release|Any CPU.Build.0 = Release|Any CPU
+        {8B723830-E882-4D0C-9DE1-C07D7EB1B9DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {8B723830-E882-4D0C-9DE1-C07D7EB1B9DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {8B723830-E882-4D0C-9DE1-C07D7EB1B9DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {8B723830-E882-4D0C-9DE1-C07D7EB1B9DB}.Release|Any CPU.Build.0 = Release|Any CPU
+        {9DA1B41C-E5C3-4B96-B756-13AFA6C4AB06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {9DA1B41C-E5C3-4B96-B756-13AFA6C4AB06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {9DA1B41C-E5C3-4B96-B756-13AFA6C4AB06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {9DA1B41C-E5C3-4B96-B756-13AFA6C4AB06}.Release|Any CPU.Build.0 = Release|Any CPU
+        {DC0051C1-8B0B-43F2-BCE3-C6777F902197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {DC0051C1-8B0B-43F2-BCE3-C6777F902197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {DC0051C1-8B0B-43F2-BCE3-C6777F902197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {DC0051C1-8B0B-43F2-BCE3-C6777F902197}.Release|Any CPU.Build.0 = Release|Any CPU
+    EndGlobalSection
+EndGlobal

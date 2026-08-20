@@ -1,0 +1,19 @@
+CorelDRAW官方图标提取器 V1.21 Fix21
+
+本版目标：把 CorelDRAW 2026+ 的图标 GUID 主链从“CrlIcons/文件名猜测”切换到官方 `icons.map.xml -> Modern.crlicons` 映射，并让新版图标直接可复制 GUID、生成 VBA/C++ 模板。
+
+改动：
+1. 新增 `IconMapXmlParser`，读取 `<map guid="...">resource/path.ico.png</map>`。仅标准 36 位 GUID 标记为可复用 Icon GUID；`default_icon:*`、带 `_clockwise` 等非标准键保留解析但不用于 SetIcon2。
+2. 新增 `ModernIconMapBinder`，按完整资源路径精确关联 Modern 图片；支持官方 `.png.png` 重复后缀特例，不做宽松模糊匹配。
+3. `IconAsset` 新增 `IconGuids / IconGuidSource`，允许一个官方图片拥有多个可复用 Icon GUID。
+4. `IconAssociationEngine` 优先使用 DrawUI 声明的 Icon GUID 查询已绑定的 Modern 图片；命令 GUID 与官方图标 GUID相同时也可直接关联。
+5. 2026 完整扫描自动寻找 `icons.map.xml`，并在读取 Modern 后先绑定官方 GUID，再进行命令关联。X8 等旧版 CrlIcons.dll 路径不变。
+6. 顶部 `加载Modern.crlicons` 改名 `加载新版图标资源`；选择 Modern 后自动查找 `icons.map.xml`，找不到才提示手动选择。
+7. 只要图片本身具有官方 Icon GUID，右侧复制 GUID / guid:// / icon=引用 / VBA / C++/CPG 模板即可启用，不再要求 Command GUID 先关联成功。
+8. 高级 GUID 信息保持展开；增加其他可用图标 GUID 与 GUID 映射来源显示。
+9. VBA / C++ 模板 `SetIcon2("guid://...")` 核心保持不变；新增图标资源路径与 GUID 来源注释。
+10. 扫描状态显示 `Modern有GUID / 映射GUID / 命令关联 / 图标GUID`，用于实机检查 2026 新链路。
+11. 中文智能搜索保留；官方 GUID 关联成功后，中文别名可随命令关系命中 Modern 图标。
+12. 新增 parser/binder/association/template 回归测试与 Fix21 专项静态审计。
+
+验证说明：当前容器没有 .NET SDK，因此不能在此声称 Windows `dotnet test`、WPF 编译或 CorelDRAW 实机已通过。已执行源码静态审计、XML/XAML 解析、真实 icons.map.xml/Modern.crlicons 数据交叉验证和 ZIP 完整性检查。Windows 端仍需执行固定发布命令并实测 X8/2026。

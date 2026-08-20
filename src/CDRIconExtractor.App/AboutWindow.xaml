@@ -1,0 +1,19 @@
+<Window x:Class="CDRIconExtractor.App.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="关于 - CorelDRAW官方图标提取器" Icon="Assets/f10ai.ico"
+        Width="430" Height="320" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Background="#F7F8FA">
+    <Grid Margin="24">
+        <Grid.RowDefinitions><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Text="CorelDRAW官方图标提取器" FontSize="22" FontWeight="SemiBold" Foreground="#1F2937"/>
+            <TextBlock Text="Version 1.21" Margin="0,5,0,0" Foreground="#667085"/>
+            <TextBlock Text="By北落果" Margin="0,12,0,0" FontSize="15" FontWeight="SemiBold" Foreground="#344054"/>
+            <TextBlock Text="联系QQ:517679191" Margin="0,5,0,0" Foreground="#475467"/>
+            <Border BorderBrush="#E1E5EC" BorderThickness="0,1,0,0" Margin="0,18,0,16"/>
+            <TextBlock Text="浏览图标与 GUID，导出资源并生成 VBA / C++ CPG 注册代码。" TextWrapping="Wrap" LineHeight="23" Foreground="#475467"/>
+            <TextBlock Text="支持本机扫描、CrlIcons.dll、Modern.crlicons 与 GUID 开发模板。" Margin="0,12,0,0" Foreground="#667085" FontSize="12"/>
+        </StackPanel>
+        <Button Grid.Row="1" Content="关闭" Width="84" HorizontalAlignment="Right" IsCancel="True"/>
+    </Grid>
+</Window>
