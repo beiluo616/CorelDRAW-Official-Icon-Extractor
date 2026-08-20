@@ -1,1 +1,0 @@
-界面截图：interface-preview.jpg 与 search-cn-preview.jpg
