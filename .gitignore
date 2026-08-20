@@ -1,0 +1,30 @@
+# Visual Studio / .NET
+.vs/
+.worktrees/
+bin/
+obj/
+artifacts/
+TestResults/
+*.trx
+*.user
+*.suo
+*.userprefs
+*.log
+
+# Local packages / archives
+*.zip
+*.7z
+*.rar
+
+# CorelDRAW proprietary resources - never commit these
+*.crlicons
+icons.map.xml
+CrlIcons.dll
+CrlResources.dll
+CrlInterop.dll
+CrlGenericUI.dll
+CorelDRW.exe
+
+# OS
+Thumbs.db
+.DS_Store
